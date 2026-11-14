@@ -1,0 +1,41 @@
+{
+  "status": 200,
+  "body": {
+    "input": "SK2120577756",
+    "normalized": "SK2120577756",
+    "display": "SK2120577756",
+    "country_code": "SK",
+    "country_name": "Slovakia",
+    "status": "valid",
+    "name": "MDB Group s.r.o.",
+    "address": "Námestie SNP 478/19\n81101 Bratislava - mestská časť Staré Mesto\nSlovensko",
+    "details_note": null,
+    "reason_code": null,
+    "message": null,
+    "match": null,
+    "consultation_number": null,
+    "requester_vat_id": null,
+    "source": {
+      "name": "VIES (European Commission)",
+      "url": "https://ec.europa.eu/taxation_customs/vies/",
+      "checked_at": "2026-11-12T23:26:21.291Z"
+    },
+    "cached": false,
+    "disclaimer": "Information only, not tax or legal advice.",
+    "record_text": "VAT ID check record\nNumber: SK2120577756 (Slovakia)\nResult: VALID - the number is active in the official register\nName: MDB Group s.r.o.\nAddress: Námestie SNP 478/19, 81101 Bratislava - mestská časť Staré Mesto, Slovensko\nCheck it yourself: https://ec.europa.eu/taxation_customs/vies/#/vat-validation\nSource: VIES (European Commission), https://ec.europa.eu/taxation_customs/vies/\nChecked at: 2026-11-12 23:26:21 UTC\nInformation only, not tax or legal advice.",
+    "how_checked": {
+      "steps": [
+        "Format and check digit checked by the app: correct.",
+        "Queried VIES live at 2026-11-12 23:26:21 UTC.",
+        "VIES answered: valid, with name and address."
+      ],
+      "check_yourself": [
+        {
+          "source": "VIES",
+          "url": "https://ec.europa.eu/taxation_customs/vies/#/vat-validation",
+          "how": "Under 'Member State / Northern Ireland' choose SK-Slovakia, enter 2120577756 as 'VAT Number', click Verify."
+        }
+      ]
+    }
+  }
+}

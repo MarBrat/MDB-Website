@@ -1,0 +1,41 @@
+{
+  "status": 200,
+  "body": {
+    "input": "DE811569869",
+    "normalized": "DE811569869",
+    "display": "DE811569869",
+    "country_code": "DE",
+    "country_name": "Germany",
+    "status": "unavailable",
+    "name": null,
+    "address": null,
+    "details_note": null,
+    "reason_code": "MS_UNAVAILABLE",
+    "message": "The national service of DE did not answer VIES. Please try again later.",
+    "match": null,
+    "consultation_number": null,
+    "requester_vat_id": null,
+    "source": {
+      "name": "VIES (European Commission)",
+      "url": "https://ec.europa.eu/taxation_customs/vies/",
+      "checked_at": "2026-11-12T23:26:22.571Z"
+    },
+    "cached": false,
+    "disclaimer": "Information only, not tax or legal advice.",
+    "record_text": "VAT ID check record\nNumber: DE811569869 (Germany)\nResult: COULD NOT BE CHECKED - the official source did not answer\nReason: The national service of DE did not answer VIES. Please try again later.\nCheck it yourself: https://ec.europa.eu/taxation_customs/vies/#/vat-validation\nSource: VIES (European Commission), https://ec.europa.eu/taxation_customs/vies/\nChecked at: 2026-11-12 23:26:22 UTC\nInformation only, not tax or legal advice.",
+    "how_checked": {
+      "steps": [
+        "Format and check digit checked by the app: correct.",
+        "Queried VIES live at 2026-11-12 23:26:22 UTC.",
+        "VIES gave no answer on the registration (code MS_UNAVAILABLE)."
+      ],
+      "check_yourself": [
+        {
+          "source": "VIES",
+          "url": "https://ec.europa.eu/taxation_customs/vies/#/vat-validation",
+          "how": "Under 'Member State / Northern Ireland' choose DE-Germany, enter 811569869 as 'VAT Number', click Verify. Try later; the source did not answer now."
+        }
+      ]
+    }
+  }
+}
