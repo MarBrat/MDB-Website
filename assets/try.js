@@ -18,6 +18,7 @@
     limit: ["Too many checks from your connection. Please wait 10 minutes.", "Zu viele Prüfungen von Ihrer Verbindung. Bitte 10 Minuten warten."],
     origin: ["The check service does not accept requests from this page. Use the web check at b2b.mdb-group.info.", "Der Prüfdienst nimmt von dieser Seite keine Anfragen an. Bitte die Web-Prüfung unter b2b.mdb-group.info nutzen."],
     cached: [" (from cache)", " (aus dem Zwischenspeicher)"],
+    badInput: ["This input cannot be checked. Please enter one VAT ID or Swiss UID.", "Diese Eingabe lässt sich nicht prüfen. Bitte eine USt-IdNr. oder Schweizer UID eingeben."],
     source: ["Source", "Quelle"],
     checkYourself: ["Check it yourself", "Selbst nachprüfen"],
     steps: ["How it was checked", "So wurde geprüft"],
@@ -134,11 +135,11 @@
         })
         .then(function (r) {
           // 200 with a JSON result; 429 visitor limit; 403 origin not allowed (e.g. page opened locally);
-          // 400 with the app's message; anything else (5xx, a Cloudflare error page, no JSON): not reachable.
+          // 400: a fixed sentence (the app's message is technical); anything else (5xx, a Cloudflare error page, no JSON): not reachable.
           if (r.status === 200 && r.body && typeof r.body.status === "string") render(out, r.body);
           else if (r.status === 429) fail(out, TEXT.limit);
           else if (r.status === 403) fail(out, TEXT.origin);
-          else if (r.status === 400 && r.body && r.body.error) fail(out, null, String(r.body.error).slice(0, 300));
+          else if (r.status === 400) fail(out, TEXT.badInput);
           else fail(out, TEXT.unreachable);
         })
         .catch(function () { fail(out, TEXT.unreachable); })

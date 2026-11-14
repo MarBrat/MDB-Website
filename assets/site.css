@@ -165,3 +165,4 @@ html:not(.js) .try form{display:none}
 .app .pagehead h1{font-weight:500}
 /* footer links are written without spaces between them; inline-block lets them wrap on narrow screens */
 footer a{display:inline-block}
+@media (max-width:400px){.pagehead h1{font-size:1.6rem;-webkit-hyphens:auto;hyphens:auto}}
