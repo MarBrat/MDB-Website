@@ -1,0 +1,6 @@
+{
+  "status": 400,
+  "body": {
+    "error": "MCP error -32602: Input validation error: Invalid arguments for tool check_vat_id: Too big: expected string to have <=60 characters at vat_id"
+  }
+}

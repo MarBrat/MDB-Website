@@ -1,0 +1,30 @@
+{
+  "status": 200,
+  "body": {
+    "input": "SK2120577757",
+    "normalized": "SK2120577757",
+    "display": "SK2120577757",
+    "country_code": "SK",
+    "country_name": "Slovakia",
+    "status": "format_error",
+    "name": null,
+    "address": null,
+    "details_note": null,
+    "reason_code": "WRONG_CHECK_DIGIT",
+    "message": "The check digit of this number from Slovakia is wrong, so it cannot exist. Please check for a typo.",
+    "match": null,
+    "consultation_number": null,
+    "requester_vat_id": null,
+    "source": null,
+    "cached": false,
+    "disclaimer": "Information only, not tax or legal advice.",
+    "record_text": "VAT ID check record\nNumber: SK2120577757 (Slovakia)\nResult: FORMAT ERROR - the number cannot exist in this form; no lookup was made\nReason: The check digit of this number from Slovakia is wrong, so it cannot exist. Please check for a typo.\nInformation only, not tax or legal advice.",
+    "how_checked": {
+      "steps": [
+        "Format and check digit checked by the app: wrong check digit.",
+        "No register was queried."
+      ],
+      "check_yourself": []
+    }
+  }
+}
